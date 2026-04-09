@@ -3,35 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Food, LLC - Drinks Menu</title>
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* These styles ensure you meet the assignment requirements for height and color */
+    .main-section {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 15px;
+      height: 1000px; /* Makes the page scrollable as required */
+    }
+    .main-content {
+      padding: 20px;
+    }
+    /* Style for the mobile menu background */
+    #collapsable-nav {
+      background-color: #e7e7e7;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-
-    <!-- Brand and toggle button -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed visible-xs"
+      <button type="button" class="navbar-toggle collapsed visible-xs" 
               data-toggle="collapse" data-target="#collapsable-nav">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
       <a class="navbar-brand" href="#">Food, LLC</a>
     </div>
 
-    <!-- Mobile menu -->
     <div id="collapsable-nav" class="collapse navbar-collapse">
       <ul class="nav navbar-nav visible-xs text-center">
         <li><a href="#mango-float">Mango Float</a></li>
@@ -39,154 +49,39 @@
         <li><a href="#milk-tea">Milk Tea</a></li>
       </ul>
     </div>
-
   </div>
 </nav>
 
-<!-- PAGE HEADING -->
-<div class="container">
-  <h1 class="text-center">Our Drinks Menu</h1>
-</div>
+<h1 class="text-center">Our Drinks Menu</h1>
 
-<!-- MAIN SECTIONS -->
 <div class="container-fluid main-content">
-
-  <!-- Mango Float Section -->
   <div class="row">
-    <div id="mango-float" class="col-xs-12 main-section">
-      <h3 class="text-center">Mango Float</h3>
-      <p>
-        Delight in our creamy Mango Float dessert drink, made with layers of fresh mango, 
-        graham crackers, and rich cream. Perfectly chilled, it’s a refreshing treat for any time of day.
-      </p>
+    
+    <div id="mango-float" class="col-md-4 col-sm-6 col-xs-12">
+      <div class="main-section">
+        <h3 class="text-center">Mango Float</h3>
+        <p>Delight in our creamy Mango Float dessert drink...</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Halo-Halo Section -->
-  <div class="row">
-    <div id="halo-halo" class="col-xs-12 main-section">
-      <h3 class="text-center">Halo-Halo</h3>
-      <p>
-        Experience the classic Filipino dessert drink Halo-Halo, packed with sweetened beans, 
-        jellies, fruits, and shaved ice, topped with creamy milk. A colorful and delightful treat 
-        for a hot day.
-      </p>
+    <div id="halo-halo" class="col-md-4 col-sm-6 col-xs-12">
+      <div class="main-section">
+        <h3 class="text-center">Halo-Halo</h3>
+        <p>Experience the classic Filipino dessert drink...</p>
+      </div>
     </div>
-  </div>
 
-  <!-- Milk Tea Section -->
-  <div class="row">
-    <div id="milk-tea" class="col-xs-12 main-section">
-      <h3 class="text-center">Milk Tea</h3>
-      <p>
-        Enjoy our premium Milk Tea, crafted with the finest tea leaves and blended with creamy milk. 
-        Served hot or cold, this classic favorite is a smooth and indulgent beverage for any occasion.
-      </p>
+    <div id="milk-tea" class="col-md-4 col-sm-12 col-xs-12">
+      <div class="main-section">
+        <h3 class="text-center">Milk Tea</h3>
+        <p>Enjoy our premium Milk Tea, crafted with tea leaves...</p>
+      </div>
     </div>
-  </div>
 
+  </div>
 </div>
 
-<!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Food, LLC - Drinks Menu</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-
-    <!-- Brand and toggle button -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed visible-xs"
-              data-toggle="collapse" data-target="#collapsable-nav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="#">Food, LLC</a>
-    </div>
-
-    <!-- Mobile menu -->
-    <div id="collapsable-nav" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav visible-xs text-center">
-        <li><a href="#mango-float">Mango Float</a></li>
-        <li><a href="#halo-halo">Halo-Halo</a></li>
-        <li><a href="#milk-tea">Milk Tea</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-<!-- PAGE HEADING -->
-<div class="container">
-  <h1 class="text-center">Our Drinks Menu</h1>
-</div>
-
-<!-- MAIN SECTIONS -->
-<div class="container-fluid main-content">
-
-  <!-- Mango Float Section -->
-  <div class="row">
-    <div id="mango-float" class="col-xs-12 main-section">
-      <h3 class="text-center">Mango Float</h3>
-      <p>
-        Delight in our creamy Mango Float dessert drink, made with layers of fresh mango, 
-        graham crackers, and rich cream. Perfectly chilled, it’s a refreshing treat for any time of day.
-      </p>
-    </div>
-  </div>
-
-  <!-- Halo-Halo Section -->
-  <div class="row">
-    <div id="halo-halo" class="col-xs-12 main-section">
-      <h3 class="text-center">Halo-Halo</h3>
-      <p>
-        Experience the classic Filipino dessert drink Halo-Halo, packed with sweetened beans, 
-        jellies, fruits, and shaved ice, topped with creamy milk. A colorful and delightful treat 
-        for a hot day.
-      </p>
-    </div>
-  </div>
-
-  <!-- Milk Tea Section -->
-  <div class="row">
-    <div id="milk-tea" class="col-xs-12 main-section">
-      <h3 class="text-center">Milk Tea</h3>
-      <p>
-        Enjoy our premium Milk Tea, crafted with the finest tea leaves and blended with creamy milk. 
-        Served hot or cold, this classic favorite is a smooth and indulgent beverage for any occasion.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
